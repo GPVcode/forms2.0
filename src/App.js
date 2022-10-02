@@ -8,7 +8,8 @@ const App = () => {
       email: "",
       password: "",
       confirmPassword: "",
-      joinedNewsletter: true
+      joinedNewsletter: true,
+      favColor: ""
     }
   )
 
@@ -60,6 +61,17 @@ const App = () => {
           onChange={handleChange} 
           value={formData.confirmPassword}
           className="form--input"/>
+          <select 
+            id="favColor"
+            value={formData.favColor}
+            onChange={handleChange}
+            name="favColor"
+          >
+              <option value="red">Red</option>
+              <option value="white">White</option>
+              <option value="blue">Blue</option>
+              <option value="other">Other</other>
+          </select>
           <div className='form--marketing'>
             <input 
             id="okayToEmail"
